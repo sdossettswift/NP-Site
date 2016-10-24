@@ -10,9 +10,79 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20161024225454) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "articles", force: :cascade do |t|
+    t.string   "title"
+    t.string   "subtitle"
+    t.string   "publication"
+    t.date     "date"
+    t.integer  "year"
+    t.string   "link"
+    t.string   "attachment"
+    t.text     "content"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "books", force: :cascade do |t|
+    t.string   "title"
+    t.string   "fullTitle"
+    t.string   "shortTitle"
+    t.string   "className"
+    t.integer  "year"
+    t.string   "publisher"
+    t.string   "contributors"
+    t.string   "pages"
+    t.integer  "height"
+    t.integer  "width"
+    t.string   "language"
+    t.text     "description"
+    t.string   "amazonLink"
+    t.string   "photoLink"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "essays", force: :cascade do |t|
+    t.string   "title"
+    t.string   "publication"
+    t.date     "date"
+    t.integer  "year"
+    t.string   "publisher"
+    t.string   "bookAuthor"
+    t.string   "link"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "lectures", force: :cascade do |t|
+    t.string   "title"
+    t.string   "institution"
+    t.date     "date"
+    t.string   "link"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.string   "url"
+    t.string   "caption"
+    t.date     "date"
+    t.string   "link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
 end
