@@ -1,2 +1,23 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<div class="row">
+      <div class="col-md-5">
+        <div class="book_wrapper">
+          <div class="book2">
+            <% if @book.photoLink.nil?%>
+              <%else%>
+                <%= image_tag @book.photoLink %>
+            <%end%>
+          </div>
+        </div>
+      </div>
+  <div class="col-md-7">
+    <h3> <%= @book.fullTitle%> </h3>
+    <h4> <%= @book.year%> </h4>
+    <p> <%= @book.description%> </p>
+    <p> <%= @book.contributors%> </p>
+
+    <h4><div class="link">
+    <%=link_to "Buy Now", @book.amazonLink, target: '_blank'%>
+    </div></h4>
+  </div>
+</div>
+</div>

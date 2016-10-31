@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'home/about'
+
+  get 'sessions/new'
+
+  get 'sessions/create'
+
+  get 'sessions/delete'
+
   mount Ckeditor::Engine => '/ckeditor'
 
   namespace :admin do

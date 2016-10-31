@@ -1,2 +1,44 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
+<div class="container">
+  <div class="article_box_wrapper">
+    <% @articles.each do |article| %>
+      <div class="article_box">
+        <div class="article_title">
+          <%= article.title%>
+        </div>
+        <div class="article_publication">
+            <%= article.publication%>
+            <%= article.date%>
+          </div>
+        </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="article_box_wrapper">
+    <div class="article_box">
+      <div class="article_title">
+        Title
+      </div>
+      <div class="article_publication">
+          magazine
+          2016
+      </div>
+    </div>
+
+    <div class="article_box">
+      <div class="article_title">
+        Title
+      </div>
+      <div class="article_publication">
+          magazine
+          2016
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

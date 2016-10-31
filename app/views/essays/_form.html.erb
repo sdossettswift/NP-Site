@@ -1,0 +1,21 @@
+
+<div class="form">
+  <% if @essay.errors.any? %>
+    <div class="alert alert-danger" role="alert">
+        <% @essay.errors.full_messages.each do |msg| %>
+        <%= msg %><br>
+        <% end %>
+    </div>
+  <% end %>
+
+  <%= simple_form_for @essay do |f|%>
+    <%= f.input :title%>
+    <%= f.input :publication%>
+    <%= f.input :date%>
+    <%= f.input :year%>
+    <%= f.input :publisher%>
+    <%= f.input :bookAuthor%>
+    <%= f.input :link%>
+    <%= f.button :submit%>
+  <%end%>
+</div>

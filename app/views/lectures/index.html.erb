@@ -1,2 +1,16 @@
-<h1>Lectures#index</h1>
-<p>Find me in app/views/lectures/index.html.erb</p>
+
+<div class="lecture_box_wrapper">
+  <% @lectures.each do |lecture| %>
+    <a href="<%=lecture.link%>", onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
+      <div class="lecture_box">
+        <div class="lecture_title">
+          <%= lecture.title%>
+        </div>
+        <div class="lecture_publication">
+            <%= lecture.institution%><br>
+            <%= lecture.year%>
+        </div>
+    </div>
+    </a>
+  <% end %>
+</div>
