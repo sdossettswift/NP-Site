@@ -1,2 +1,8 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<div class="blog_wrapper">
+      <div class="post_box">
+        <h2><%=@post.title %></h2>
+        <h3><%=@post.date.strftime("%m/%d/%Y")%></h3>
+          <%= raw @post.content %>
+        </div>
+
+</div>
