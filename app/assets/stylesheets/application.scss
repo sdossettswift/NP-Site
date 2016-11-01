@@ -7,15 +7,23 @@
 /* PAGE DEFAULTS */
   $blue: rgb(0,58,183);
   $green: rgb(0,152,86);
+/*BODY */
+.body{
 
+  min-height: 75vh;
+  width: 80%;
+  // border: 1px solid pink;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 32px;
+}
 // SEARCH BAR
 #search{
 
     border-radius: 30px;
-    *{
-      font-family: 'Lato', sans-serif;
-      font-size: 1.2em;
-    }
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
 }
   //typography
     p{
@@ -122,42 +130,73 @@
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: right;
+    // justify-content: flex-start;
+    // align-content: stretch;
+    // align-items: baseline;
+}
+
+
+  .book_box{
+    width: 260px;
+    height: 260px;
+    margin: 10px;
+    position: relative;
+    // background-color: pink;
   }
   .book{
-    max-width: 200px;
-    max-height: 450px;
-    margin: 40px;
-    img{
-      height: auto;
-      width: 50%;
-      align-items: center;
-    }
+    // height: 100%;
+    // width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: $blue;
+    align-self: baseline;
     .hidden_text{
       display: none;
     }
+    img{
+      height: 100%;
+      // display: none;
+    }
+
   }
   .book:hover{
-    height: auto;
-    width: auto;
     background-color: $green;
-    text-align: center;
+    .hidden_text{
+      color: white;
+      display: block;
+     font-family: 'Lato', sans-serif;
+      font-size: 1.5rem;
+      margin: 10%;
+      text-align: center;
+    }
     img{
+      height: 100%;
       display: none;
     }
-    .hidden_text{
-      display: inline;
-      color: white;
-      font-size: 1.4em;
-      font-family: 'Lato', sans-serif;
-      text-transform: uppercase;
 
 
-    }
+
   }
+  // .book:hover{
+  //
+  //   background-color: $green;
+  //   img{
+  //     display: none;
+  //   }
+  //   .hidden_text{
+  //     // vertical-align: middle;
+  //     text-align: center;
+  //     display: inline;
+  //     color: white;
+  //     font-size: 1.4em;
+  //     font-family: 'Lato', sans-serif;
+  //
+  //   }
+  // }
   .centered{
     align-self: center;
+    align-items: center;
+    text-align: center;
   }
   .book2{
 
@@ -229,17 +268,16 @@
   }
   .lecture_box{
     background-color: $blue;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     padding: 30px;
     display:flex;
-   flex-direction: column;
-   flex-wrap: nowrap;
-   justify-content: space-between;
-   align-content: space-between;
-   align-items: center;
-   margin: 25px;
-
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    margin: 25px;
   }
   .lecture_box:hover {
     background-color: $green;
@@ -259,8 +297,9 @@
 
 /* photos */
   .photo_box{
-    height: 350px;
-    width: 350px;
+    max-height: 280px;
+    max-width: 280px;
+    margin: 20px;
 
     img{
       width: 100%;
@@ -402,3 +441,39 @@
 
   /* Larger than Desktop HD */
   @media (min-width: 1200px) {}
+
+// CLASSES FOR BOOKS //
+.jutaku{
+  height: 64%;
+  width: 40%;
+}
+
+.hitoshiabe{
+  height: 98%;
+  width: 85%;
+}
+.modernjapanesehouse{
+  height: 98%;
+  width: 85%;
+}
+.japan2000{
+  height: 93%;
+  width: 75%;
+}
+.newarchitectureinjapan{
+  height: 85%;
+  width: 85%;
+  border: 1px solid black;
+}
+.madeinjapan{
+  height:85%;
+  width: 66%;
+  border: 1px solid black;
+
+
+}
+.soufujimoto{
+  height:92%;
+  width: 70%;
+
+}
