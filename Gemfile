@@ -25,6 +25,7 @@ gem 'refile-mini_magick'
 gem 'refile-postgres', '~> 1.4'
 gem 'sinatra', github: 'sinatra/sinatra', branch: 'master'
 gem 'rack-protection'
+gem 'non-stupid-digest-assets', '~> 1.0.4'
 
 
 
