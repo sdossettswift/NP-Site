@@ -43,6 +43,18 @@ def lecturez
 end
 
 
+def articlez
+  Article.destroy_all(conditions = nil)
+    Article.create!(title:"100% Chocolate Cafe-Wonderwall", publication:"Architectural Record", date:20120916 )
+    Article.create!(title:"Futakotamagawa Rise Galleria Light Design", publication:"Architectural Record", date:20120916 )
+    Article.create!(title:"Sousuke Fujimoto House NA", publication:"Architectural Record", date:20120916 )
+    Article.create!(title:"Japan Post Disaster", publication:"wallpaper*", date:20120916 )
+    Article.create!(title:"Book:New Architecture in Japan", publication:"wallpaper*", date:20120916 )
+    Article.create!(title:"Interactive Floorplan: Celluloid Jam, Yokohama", publication:"wallpaper*", date:20120916 )
+
+end
+
 photoz
 bookz
 lecturez
+articlez
