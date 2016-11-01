@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161026163754) do
+ActiveRecord::Schema.define(version: 20161031220304) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20161026163754) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.string   "subtitle"
+    t.string   "lass"
   end
 
   create_table "ckeditor_assets", force: :cascade do |t|
