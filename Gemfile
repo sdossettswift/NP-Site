@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.3.1'
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'pg', '~> 0.18'
@@ -25,6 +25,7 @@ gem 'refile-mini_magick'
 gem 'refile-postgres', '~> 1.4'
 gem 'sinatra', github: 'sinatra/sinatra', branch: 'master'
 gem 'rack-protection'
+
 
 
 group :test do

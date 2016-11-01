@@ -1,0 +1,17 @@
+language: ruby
+rvm:
+- 2.3.1
+addons:
+  postgresql: '9.4'
+before_script:
+- psql -c 'create database travis_ci_test;' -U postgres
+- cp config/database.yml.travis config/database.yml
+deploy:
+  provider: heroku
+  api_key:
+    secure: EudoLQZuGFQGynABpLX9ShAbeXub/Pi1u/GiHwLh0kTPorYJ6MKDmbH12ErWJZlBoijs+HlRtTHE99JzBy+4oYa2mtlA0VATvthRIooWzlKjCHeJbDrI636niTnlOzbHDMb8kqNtt81OQTFaHS3KhvMveLtQ7eMGJn9VfBjV665o/uKKII9UU3dRi0mfH3oXB0BZTOib3CSjP3oACkzMl37ikI3LQPW7ew44cpA2tJpT2C6V2MCPFZzSQqUXczSPnosYeKXTrLwESRmiVmCMSxxg8yHqZX9Vxuy7HN5/llUiKTyKiBzyimT90PF7QUe92J/QhdT/98UeKJ7mkYP3fcgU3uvlsPVqW5ZeTWOB8R3KqD34AfD+od3/nXVm0xwGD+cfXLUS8aRgD1N//06RYBYPwc6fsIEdQDHrRHA5dKAcbd/4bXLBrj4+U215HPEK09I4kaNYKfKyzNxkhMCkmzvShYfgMovjwxz81RtZEXtvIbfRZBDsUkgSIHV1cpRgCjFLJ08JUULHOe2zObGh/Zqi2gbZXYzZyuMG45TEedN5ZWNgvgjt3QsDfEH0yrf4kY7JWh7rTahnhVv2N2a++iKVps5Dd/uC5j6Ktri1otmmf8DOjLDsm3NxwkiqvoF2zl/XQJqNeiNCRRB/4o2SxniyqI4LYhkV6cNuN47qisg=
+  app: npollock
+  on:
+    repo: sdossettswift/japan
+ run:
+    - "rake db:migrate"
