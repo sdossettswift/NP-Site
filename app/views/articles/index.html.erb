@@ -3,11 +3,11 @@
     <% @articles.each do |article| %>
       <div class="article_box">
         <div class="article_title">
-          <%= article.title%>
+          "<%= article.title%>"
         </div>
         <div class="article_publication">
             <%= article.publication%>
-            <%= article.date%>
+            <%= article.date.strftime("%m/%d/%Y")%>
           </div>
         </div>
     <% end %>

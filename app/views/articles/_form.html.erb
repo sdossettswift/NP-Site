@@ -9,9 +9,11 @@
   <% end %>
 
   <%= simple_form_for @article do |f|%>
-    <%= f.input :title%>
+    <%= f.label :title %>
+    <%= f.input_field :title %>
+    <%= f.label :publication%>
+    <%= f.input_field :publication %>
     <%= f.input :subtitle%>
-    <%= f.input :publication%>
     <%= f.input :date%>
     <%= f.input :year%>
     <%= f.input :link%>
