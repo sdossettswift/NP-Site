@@ -54,6 +54,12 @@ def articlez
 
 end
 
+def postz
+  Post.destroy_all(conditions = nil)
+  Post.create!(title:"", content:"<p><img alt=\"\" src=\"https://naomipollock.files.wordpress.com/2014/01/img_5273.jpg?w=650\" style=\"width: 400px; height: 535px;\" /></p>\r\n\r\n<p>Freak of nature or thing of beauty?&nbsp;Shortly before New Year&rsquo;s, Abby and I chanced upon this choice cabbage perched regally in front of a chopstick store on the Hiroo shopping street. Just look at its girth! Unfortunately, I no longer remember the cabbage&rsquo;s exact weight (which was noted on a piece of paper nearby) but &nbsp;it was roughly 40 pounds, or about the same size as our dog, Pippi. Now that&rsquo;s a whole lot of cole slaw!</p>\r\n\r\n<p><img alt=\"\" src=\"https://naomipollock.files.wordpress.com/2014/01/img_5272.jpg\" style=\"height: 536px; width: 400px;\" /></p>\r\n\r\n<p>Just look at the leaves on that thing! And the veining &hellip;. oh my. Hailing from Hokkaido, it is surely as impressive as a country fair prize winner anywhere. Below you will see the cabbage in situ which should give you some idea of its size.</p>\r\n\r\n<p><img alt=\"\" src=\"https://naomipollock.files.wordpress.com/2014/01/img_5288.jpg?w=650\" style=\"width: 400px; height: 535px;\" /></p>\r\n\r\n<p><img alt=\"\" src=\"https://naomipollock.files.wordpress.com/2014/01/img_5239.jpg?w=650\" style=\"width: 400px; height: 535px;\" /></p>\r\n\r\n<p>The japanese fascination with large vegetables is by no means limited to cabbages. Aren&rsquo;t these radishes amazing? Here the small stuff is sometimes very, very big.</p>\r\n", date: 20140107)
+end
+
+
 photoz
 bookz
 lecturez
