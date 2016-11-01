@@ -140,15 +140,13 @@
     width: 260px;
     height: 260px;
     margin: 10px;
+    margin-bottom: 30px; 
     position: relative;
     // background-color: pink;
   }
   .book{
-    // height: 100%;
-    // width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: $blue;
     align-self: baseline;
     .hidden_text{
       display: none;

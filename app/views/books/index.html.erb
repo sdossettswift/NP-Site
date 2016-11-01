@@ -10,3 +10,20 @@
     </a>
   <% end %>
 </div>
+
+<div class="centered">
+  <h2>CONTRIBUTOR:</h2>
+</div>
+
+<div class="book_wrapper">
+  <% @contributed_books.each do |book| %>
+    <a href="/books/<%=book.id%>">
+      <div class="book_box">
+        <div class="book <%=book.lass%>" >
+              <%= image_tag book.photoLink%>
+              <h2 class="hidden_text"><%=book.title %></h2>
+        </div>
+      </div>
+    </a>
+  <% end %>
+</div>
