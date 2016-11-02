@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    get 'dashboard/welcome'
+  end
+
   mount Ckeditor::Engine => '/ckeditor'
 
   namespace :admin do

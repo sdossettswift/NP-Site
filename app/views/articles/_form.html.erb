@@ -8,17 +8,19 @@
     </div>
   <% end %>
 
-  <%= simple_form_for @article do |f|%>
-    <%= f.label :title %>
-    <%= f.input_field :title %>
-    <%= f.label :publication%>
-    <%= f.input_field :publication %>
-    <%= f.input :subtitle%>
-    <%= f.input :date%>
-    <%= f.input :year%>
-    <%= f.input :link%>
-    <%= f.input :attachment%>
-    <%= f.input :content%>
-    <%= f.button :submit%>
-  <%end%>
-</div>
+  <div class="form_box">
+      <%= simple_form_for @article do |f|%>
+        <%= f.label :title %>
+        <%= f.input_field :title %>
+        <%= f.label :publication%>
+        <%= f.input_field :publication %>
+        <%= f.input :subtitle%>
+        <%= f.input :date%>
+        <%= f.input :year%>
+        <%= f.input :link%>
+        <%= f.input :attachment%>
+        <%= f.input :content%>
+        <%= f.button :submit%>
+      <%end%>
+    </div>
+  </div>

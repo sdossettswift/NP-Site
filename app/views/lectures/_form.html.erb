@@ -6,9 +6,10 @@
         <% end %>
     </div>
   <% end %>
-
+<div class="form_box">
   <%= simple_form_for @lecture do |f|%>
-    <%= f.input :title%>
+    <%= f.label :title%>
+    <%= f.text_field :title%>
     <%= f.input :institution%>
     <%= f.input :year%>
     <%= f.input :date%>
@@ -16,4 +17,6 @@
     <%= f.input :description%>
     <%= f.button :submit%>
   <%end%>
+</div>
+
 </div>

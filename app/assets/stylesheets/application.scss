@@ -53,7 +53,7 @@
 
     ul{
     text-align: center;
-    padding: 0; 
+    padding: 0;
   }
 
   //links - no underline, lato
@@ -369,5 +369,60 @@
 .soufujimoto{
   height:92%;
   width: 70%;
+
+}
+//ADMIN
+.admin_box_wrapper{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+
+}
+.admin_box{
+  height: 150px;
+  width: 150px;
+  background-color: $green;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  font-weight: lighter;
+  *{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+}
+.admin_box_short{
+  height: 20px;
+  width: 150px;
+  background-color: $green;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  font-weight: lighter;
+  *{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+}
+
+.admin_box:hover {
+  background-color: $blue;
+}
+
+.form{
+  *{
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+.form_box{
+  width: 50%;
+  padding-right: 25%;
+  padding-left: 25%;
 
 }
