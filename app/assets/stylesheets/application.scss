@@ -147,12 +147,17 @@
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    width: 95%;
+    margin-left: 5%;
+
 }
 
 
   .book_box{
-    width: 260px;
-    height: 260px;
+    width: 250px;
+    height: 250px;
     margin: 10px;
     margin-bottom: 30px;
     position: relative;
@@ -214,20 +219,22 @@
   }
 
 /* articles */
+
   .article_box_wrapper{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+
   }
   .article_box{
     background-color: $blue;
-    height: 180px;
-    width: 180px;
+    height: 250px;
+    width: 250px;
     margin: 20px;
-    padding: 10px;
+    padding: 15px;
     display:flex;
    flex-direction: column;
    flex-wrap: nowrap;
@@ -250,7 +257,7 @@
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
 

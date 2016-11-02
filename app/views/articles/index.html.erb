@@ -1,13 +1,14 @@
-<div class="article_box_wrapper">
-  <% @articles.each do |article| %>
-    <div class="article_box">
-      <div class="article_title">
-        "<%= article.title%>"
-      </div>
-      <div class="article_publication">
-          <%= article.publication%></br>
-          <%= article.date.strftime("%m/%d/%Y")%>
+
+  <div class="article_box_wrapper">
+    <% @articles.each do |article| %>
+      <div class="article_box">
+        <div class="article_title">
+          "<%= article.title%>"
         </div>
-      </div>
-  <% end %>
-</div>
+        <div class="article_publication">
+            <%= article.publication%></br>
+            <%= article.date.strftime("%m/%d/%Y")%>
+          </div>
+        </div>
+    <% end %>
+  </div>
