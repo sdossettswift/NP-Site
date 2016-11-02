@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   def create
     @post=Post.create(post_params)
     if @post.save
-      redirect_to admin_dashboard_path, notice: "Post Successfully Added"
+      redirect_to root_path, notice: "Post Successfully Added"
     else
       render :new
     end
@@ -27,7 +27,7 @@ class PostsController < ApplicationController
   def update
     @post = Post.find_by id: params[:id]
     if @post.update(post_params)
-      redirect_to admin_dashboard_path, notice: "Post Details Successfully Updated"
+      redirect_to root_path, notice: "Post Details Successfully Updated"
     else
       render :edit
     end
@@ -36,7 +36,7 @@ class PostsController < ApplicationController
   def delete
       @post = Post.find_by id: params[:id]
       @post.destroy
-      redirect_to admin_dashboard_path, notice: 'Post Details Removed'
+      redirect_to root_path, notice: 'Post Details Removed'
   end
 
   def post_params
