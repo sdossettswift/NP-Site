@@ -8,5 +8,3 @@ deploy:
   app: npollock
   on:
     repo: sdossettswift/japan
- run:
-  - "rake db:migrate"
