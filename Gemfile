@@ -18,7 +18,7 @@ gem 'instagram'
 gem 'active_link_to'
 gem 'insta_scrape'
 gem 'ckeditor'
-gem 'ckeditor_rails'
+# gem 'ckeditor_rails'
 gem 'rails_12factor' #for heroku
 gem 'pg_search' #postgres search
 gem 'refile', github: "refile/refile", require: 'refile/rails'
