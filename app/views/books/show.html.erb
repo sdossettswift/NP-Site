@@ -1,23 +1,17 @@
-<div class="row">
-      <div class="col-md-5">
-        <div class="book_wrapper">
-          <div class="book2">
-            <% if @book.photoLink.nil?%>
-              <%else%>
-                <%= image_tag @book.photoLink %>
-            <%end%>
-          </div>
-        </div>
-      </div>
-  <div class="col-md-7">
-    <h2> <%= @book.fullTitle%> </h2>
-    <h3> <%= @book.year%> </h3>
-    <p> <%= @book.description%> </p>
-    <p> <%= @book.contributors%> </p>
-
-    <h3><div class="link">
-    <%=link_to "Buy It Here", @book.amazonLink, target: '_blank'%>
-  </div></h3>
+<div class="about">
+    <div class="about_image">
+      <% if @book.photoLink.nil?%>
+        <%else%>
+          <%= image_tag @book.photoLink %>
+      <%end%>
+    </div>
+  <div class="about_text">
+      <h3> <%= @book.fullTitle%> </h3>
+      <h4> <%= @book.year%> </h4>
+      <p> <%= @book.description%> </p>
+      <p> <%= @book.contributors%> </p>
+      <h3><div class="link">
+      <%=link_to "Buy It Here", @book.amazonLink, target: '_blank'%>
+    </div></h3>
   </div>
-</div>
 </div>

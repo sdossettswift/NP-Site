@@ -134,11 +134,19 @@
   width: 550px;
   text-align: justify;
   margin:  0px 40px;
-  font-weight: lighter;
   line-height: 2rem;
   h3{
     margin-top: -3px;
   }
+}
+
+.about_book{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 
 
