@@ -154,8 +154,8 @@
     flex-wrap: wrap;
     align-content: flex-start;
     align-items: center;
-    width: 95%;
-    margin-left: 5%;
+    width: 98%;
+    margin-left: 2%;
 
 }
 
@@ -181,13 +181,18 @@
   }
   .book:hover{
     background-color: $green;
+    border: none;
     .hidden_text{
       color: white;
       display: block;
      font-family: 'Lato', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: .15em;
       margin: 10%;
       text-align: center;
+      margin-top: 30%; 
+
     }
     img{
       height: 100%;
